@@ -1,0 +1,162 @@
+2024-04-03 01:57:50.724 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-03 01:57:51.114 +05:30 [DBG] Hosting starting
+2024-04-03 01:57:51.635 +05:30 [INF] Now listening on: https://localhost:7130
+2024-04-03 01:57:51.687 +05:30 [INF] Now listening on: http://localhost:5235
+2024-04-03 01:57:51.689 +05:30 [DBG] Loaded hosting startup assembly BlogApp
+2024-04-03 01:57:51.695 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-04-03 01:57:51.698 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-04-03 01:57:51.702 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-03 01:57:51.705 +05:30 [INF] Hosting environment: Development
+2024-04-03 01:57:51.707 +05:30 [INF] Content root path: D:\Deeksha\BlogApp
+2024-04-03 01:57:51.711 +05:30 [DBG] Hosting started
+2024-04-03 01:57:52.017 +05:30 [DBG] Connection id "0HN2JADFF5SPH" accepted.
+2024-04-03 01:57:52.017 +05:30 [DBG] Connection id "0HN2JADFF5SPG" accepted.
+2024-04-03 01:57:52.046 +05:30 [DBG] Connection id "0HN2JADFF5SPH" received FIN.
+2024-04-03 01:57:52.052 +05:30 [DBG] Connection id "0HN2JADFF5SPH" started.
+2024-04-03 01:57:52.047 +05:30 [DBG] Connection id "0HN2JADFF5SPG" received FIN.
+2024-04-03 01:57:52.062 +05:30 [DBG] Connection id "0HN2JADFF5SPG" started.
+2024-04-03 01:57:52.443 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-03 01:57:52.443 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-03 01:57:52.536 +05:30 [DBG] Connection id "0HN2JADFF5SPG" stopped.
+2024-04-03 01:57:52.536 +05:30 [DBG] Connection id "0HN2JADFF5SPH" stopped.
+2024-04-03 01:57:52.557 +05:30 [DBG] Connection id "0HN2JADFF5SPG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-03 01:57:52.571 +05:30 [DBG] Connection id "0HN2JADFF5SPH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-03 01:57:55.544 +05:30 [DBG] Connection id "0HN2JADFF5SPI" accepted.
+2024-04-03 01:57:55.703 +05:30 [DBG] Connection id "0HN2JADFF5SPI" started.
+2024-04-03 01:57:55.952 +05:30 [DBG] Connection 0HN2JADFF5SPI established using the following protocol: "Tls12"
+2024-04-03 01:57:56.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2024-04-03 01:57:56.250 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-03 01:57:56.296 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-03 01:57:56.299 +05:30 [DBG] Request did not match any endpoints
+2024-04-03 01:57:56.660 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-04-03 01:57:56.873 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-04-03 01:57:56.906 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2024-04-03 01:57:56.912 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2024-04-03 01:57:56.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 730.0857ms
+2024-04-03 01:57:57.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 426.7470ms
+2024-04-03 01:57:57.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 667.4257ms
+2024-04-03 01:57:57.777 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2024-04-03 01:57:57.782 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-03 01:57:57.784 +05:30 [DBG] Request did not match any endpoints
+2024-04-03 01:57:58.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 487.4688ms
+2024-04-03 01:57:59.245 +05:30 [DBG] Connection id "0HN2JADFF5SPI" received FIN.
+2024-04-03 01:57:59.251 +05:30 [DBG] The connection queue processing loop for 0HN2JADFF5SPI completed.
+2024-04-03 01:57:59.256 +05:30 [DBG] Connection id "0HN2JADFF5SPI" is closed. The last processed stream ID was 7.
+2024-04-03 01:57:59.264 +05:30 [DBG] Connection id "0HN2JADFF5SPI" sending FIN because: "The client closed the connection."
+2024-04-03 01:57:59.277 +05:30 [DBG] Connection id "0HN2JADFF5SPI" stopped.
+2024-04-03 01:58:09.255 +05:30 [DBG] Connection id "0HN2JADFF5SPJ" accepted.
+2024-04-03 01:58:09.259 +05:30 [DBG] Connection id "0HN2JADFF5SPJ" started.
+2024-04-03 01:58:09.267 +05:30 [DBG] Connection 0HN2JADFF5SPJ established using the following protocol: "Tls12"
+2024-04-03 01:58:09.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/api/Blog/1 - -
+2024-04-03 01:58:09.283 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Blog/1'
+2024-04-03 01:58:09.295 +05:30 [DBG] Endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)' with route pattern 'api/Blog/{authorId}' is valid for the request path '/api/Blog/1'
+2024-04-03 01:58:09.299 +05:30 [DBG] Request matched endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)'
+2024-04-03 01:58:09.304 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-03 01:58:09.312 +05:30 [INF] Executing endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)'
+2024-04-03 01:58:09.361 +05:30 [INF] Route matched with {action = "GetPostsByAuthorId", controller = "Blog"}. Executing controller action with signature BlogApp.Models.APIResponse GetPostsByAuthorId(Int32) on controller BlogApp.Controllers.BlogController (BlogApp).
+2024-04-03 01:58:09.367 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-03 01:58:09.370 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-03 01:58:09.376 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-03 01:58:09.382 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-03 01:58:09.384 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-03 01:58:09.392 +05:30 [DBG] Executing controller factory for controller BlogApp.Controllers.BlogController (BlogApp)
+2024-04-03 01:58:09.721 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-03 01:58:09.771 +05:30 [DBG] Executed controller factory for controller BlogApp.Controllers.BlogController (BlogApp)
+2024-04-03 01:58:09.797 +05:30 [DBG] Attempting to bind parameter 'authorId' of type 'System.Int32' ...
+2024-04-03 01:58:09.803 +05:30 [DBG] Attempting to bind parameter 'authorId' of type 'System.Int32' using the name 'authorId' in request data ...
+2024-04-03 01:58:09.809 +05:30 [DBG] Done attempting to bind parameter 'authorId' of type 'System.Int32'.
+2024-04-03 01:58:09.811 +05:30 [DBG] Done attempting to bind parameter 'authorId' of type 'System.Int32'.
+2024-04-03 01:58:09.814 +05:30 [DBG] Attempting to validate the bound parameter 'authorId' of type 'System.Int32' ...
+2024-04-03 01:58:09.821 +05:30 [DBG] Done attempting to validate the bound parameter 'authorId' of type 'System.Int32'.
+2024-04-03 01:58:24.071 +05:30 [INF] GetPostsByAuthorId called
+2024-04-03 01:59:10.723 +05:30 [INF] Application is shutting down...
+2024-04-03 01:59:12.344 +05:30 [DBG] Hosting stopping
+2024-04-03 01:59:12.479 +05:30 [DBG] Connection id "0HN2JADFF5SPJ" is closing.
+2024-04-03 01:59:13.993 +05:30 [DBG] Entity Framework Core 7.0.0 initialized 'BlogDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-04-03 01:59:14.143 +05:30 [DBG] Compiling query expression: 
+'DbSet<Author>()
+    .Where(x => x.Id == __id_0)
+    .FirstOrDefault()'
+2024-04-03 01:59:14.554 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Author>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Author.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Author.Name (string), 1] }
+        SELECT TOP(1) a.Id, a.Name
+        FROM Authors AS a
+        WHERE a.Id == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Author>, 
+    BlogApp.Data.BlogDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2024-04-03 01:59:14.626 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-03 01:59:14.632 +05:30 [DBG] Creating DbConnection.
+2024-04-03 01:59:14.694 +05:30 [DBG] Created DbConnection. (57ms).
+2024-04-03 01:59:14.709 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (85ms).
+2024-04-03 01:59:14.789 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (165ms).
+2024-04-03 01:59:14.797 +05:30 [DBG] Opening connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:15.352 +05:30 [DBG] Opened connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:15.375 +05:30 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__id_0
+2024-04-03 01:59:15.488 +05:30 [INF] Executed DbCommand (117ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__id_0
+2024-04-03 01:59:15.580 +05:30 [DBG] Context 'BlogDbContext' started tracking 'Author' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-03 01:59:15.616 +05:30 [DBG] Closing data reader to 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:15.633 +05:30 [DBG] A data reader for 'Blog' on server 'DESKTOP-AEGUHEK' is being disposed after spending 122ms reading results.
+2024-04-03 01:59:15.640 +05:30 [DBG] Closing connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:15.651 +05:30 [DBG] Closed connection to database 'Blog' on server 'DESKTOP-AEGUHEK' (11ms).
+2024-04-03 01:59:19.179 +05:30 [DBG] Compiling query expression: 
+'DbSet<Post>()
+    .Where(x => x.AuthorId == __id_0)'
+2024-04-03 01:59:19.197 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Post>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Post.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Post.AuthorId (int) Required FK Index, 1], [Property: Post.CategoryId (int) Required FK Index, 2], [Property: Post.CreatedOn (DateTime) Required, 3], [Property: Post.Discription (string), 4], [Property: Post.Image (string), 5], [Property: Post.Title (string), 6] }
+        SELECT p.Id, p.AuthorId, p.CategoryId, p.CreatedOn, p.Discription, p.Image, p.Title
+        FROM Posts AS p
+        WHERE p.AuthorId == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Post>, 
+    BlogApp.Data.BlogDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-04-03 01:59:19.208 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-03 01:59:19.214 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-04-03 01:59:19.222 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2024-04-03 01:59:19.228 +05:30 [DBG] Opening connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:19.235 +05:30 [DBG] Opened connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:19.241 +05:30 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[AuthorId], [p].[CategoryId], [p].[CreatedOn], [p].[Discription], [p].[Image], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[AuthorId] = @__id_0
+2024-04-03 01:59:19.263 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[AuthorId], [p].[CategoryId], [p].[CreatedOn], [p].[Discription], [p].[Image], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[AuthorId] = @__id_0
+2024-04-03 01:59:19.311 +05:30 [DBG] Context 'BlogDbContext' started tracking 'Post' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-03 01:59:19.336 +05:30 [DBG] Closing data reader to 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:19.341 +05:30 [DBG] A data reader for 'Blog' on server 'DESKTOP-AEGUHEK' is being disposed after spending 64ms reading results.
+2024-04-03 01:59:19.346 +05:30 [DBG] Closing connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 01:59:19.349 +05:30 [DBG] Closed connection to database 'Blog' on server 'DESKTOP-AEGUHEK' (3ms).
+2024-04-03 01:59:36.460 +05:30 [INF] Posts for  authorId = System.Collections.Generic.List`1[BlogApp.Models.Post]

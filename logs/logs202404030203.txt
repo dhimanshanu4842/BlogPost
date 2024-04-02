@@ -1,0 +1,82 @@
+2024-04-03 02:03:40.270 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" accepted.
+2024-04-03 02:03:40.290 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" started.
+2024-04-03 02:03:40.297 +05:30 [DBG] Connection 0HN2JAFQTSHLD established using the following protocol: "Tls12"
+2024-04-03 02:03:40.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/api/Blog/3 - -
+2024-04-03 02:03:40.315 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Blog/3'
+2024-04-03 02:03:40.317 +05:30 [DBG] Endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)' with route pattern 'api/Blog/{authorId}' is valid for the request path '/api/Blog/3'
+2024-04-03 02:03:40.320 +05:30 [DBG] Request matched endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)'
+2024-04-03 02:03:40.327 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-03 02:03:40.329 +05:30 [INF] Executing endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)'
+2024-04-03 02:03:40.333 +05:30 [INF] Route matched with {action = "GetPostsByAuthorId", controller = "Blog"}. Executing controller action with signature BlogApp.Models.APIResponse GetPostsByAuthorId(Int32) on controller BlogApp.Controllers.BlogController (BlogApp).
+2024-04-03 02:03:40.338 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-03 02:03:40.346 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-03 02:03:40.349 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-03 02:03:40.357 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-03 02:03:40.362 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-03 02:03:40.366 +05:30 [DBG] Executing controller factory for controller BlogApp.Controllers.BlogController (BlogApp)
+2024-04-03 02:03:40.372 +05:30 [DBG] Executed controller factory for controller BlogApp.Controllers.BlogController (BlogApp)
+2024-04-03 02:03:40.378 +05:30 [DBG] Attempting to bind parameter 'authorId' of type 'System.Int32' ...
+2024-04-03 02:03:40.381 +05:30 [DBG] Attempting to bind parameter 'authorId' of type 'System.Int32' using the name 'authorId' in request data ...
+2024-04-03 02:03:40.388 +05:30 [DBG] Done attempting to bind parameter 'authorId' of type 'System.Int32'.
+2024-04-03 02:03:40.393 +05:30 [DBG] Done attempting to bind parameter 'authorId' of type 'System.Int32'.
+2024-04-03 02:03:40.396 +05:30 [DBG] Attempting to validate the bound parameter 'authorId' of type 'System.Int32' ...
+2024-04-03 02:03:40.400 +05:30 [DBG] Done attempting to validate the bound parameter 'authorId' of type 'System.Int32'.
+2024-04-03 02:03:42.027 +05:30 [INF] GetPostsByAuthorId called
+2024-04-03 02:03:42.066 +05:30 [DBG] Entity Framework Core 7.0.0 initialized 'BlogDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-04-03 02:03:42.079 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-03 02:03:42.081 +05:30 [DBG] Creating DbConnection.
+2024-04-03 02:03:42.097 +05:30 [DBG] Created DbConnection. (16ms).
+2024-04-03 02:03:42.107 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (28ms).
+2024-04-03 02:03:42.117 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (37ms).
+2024-04-03 02:03:42.121 +05:30 [DBG] Opening connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.124 +05:30 [DBG] Opened connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.129 +05:30 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__id_0
+2024-04-03 02:03:42.151 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__id_0
+2024-04-03 02:03:42.161 +05:30 [DBG] Context 'BlogDbContext' started tracking 'Author' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-03 02:03:42.169 +05:30 [DBG] Closing data reader to 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.172 +05:30 [DBG] A data reader for 'Blog' on server 'DESKTOP-AEGUHEK' is being disposed after spending 12ms reading results.
+2024-04-03 02:03:42.182 +05:30 [DBG] Closing connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.186 +05:30 [DBG] Closed connection to database 'Blog' on server 'DESKTOP-AEGUHEK' (4ms).
+2024-04-03 02:03:42.190 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-03 02:03:42.196 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-04-03 02:03:42.200 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-04-03 02:03:42.203 +05:30 [DBG] Opening connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.206 +05:30 [DBG] Opened connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.213 +05:30 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[AuthorId], [p].[CategoryId], [p].[CreatedOn], [p].[Discription], [p].[Image], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[AuthorId] = @__id_0
+2024-04-03 02:03:42.227 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[AuthorId], [p].[CategoryId], [p].[CreatedOn], [p].[Discription], [p].[Image], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[AuthorId] = @__id_0
+2024-04-03 02:03:42.237 +05:30 [DBG] Context 'BlogDbContext' started tracking 'Post' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-03 02:03:42.240 +05:30 [DBG] Closing data reader to 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.247 +05:30 [DBG] A data reader for 'Blog' on server 'DESKTOP-AEGUHEK' is being disposed after spending 10ms reading results.
+2024-04-03 02:03:42.253 +05:30 [DBG] Closing connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.256 +05:30 [DBG] Closed connection to database 'Blog' on server 'DESKTOP-AEGUHEK' (3ms).
+2024-04-03 02:03:42.263 +05:30 [INF] Posts for  authorId = System.Collections.Generic.List`1[BlogApp.Models.Post]
+2024-04-03 02:03:42.267 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-03 02:03:42.277 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-04-03 02:03:42.279 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-04-03 02:03:42.283 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-03 02:03:42.286 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-03 02:03:42.288 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-03 02:03:42.295 +05:30 [INF] Executing ObjectResult, writing value of type 'BlogApp.Models.APIResponse'.
+2024-04-03 02:03:42.300 +05:30 [INF] Executed action BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp) in 1933.6834ms
+2024-04-03 02:03:42.302 +05:30 [INF] Executed endpoint 'BlogApp.Controllers.BlogController.GetPostsByAuthorId (BlogApp)'
+2024-04-03 02:03:42.307 +05:30 [DBG] 'BlogDbContext' disposed.
+2024-04-03 02:03:42.312 +05:30 [DBG] Disposing connection to database 'Blog' on server 'DESKTOP-AEGUHEK'.
+2024-04-03 02:03:42.315 +05:30 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-04-03 02:03:42.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/api/Blog/3 - - - 200 - application/json;+charset=utf-8 2007.1601ms
+2024-04-03 02:03:43.120 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" received FIN.
+2024-04-03 02:03:43.126 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" is closed. The last processed stream ID was 1.
+2024-04-03 02:03:43.126 +05:30 [DBG] The connection queue processing loop for 0HN2JAFQTSHLD completed.
+2024-04-03 02:03:43.154 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" sending FIN because: "The client closed the connection."
+2024-04-03 02:03:43.164 +05:30 [DBG] Connection id "0HN2JAFQTSHLD" stopped.
